@@ -1,0 +1,8 @@
+# Project
+bin/
+obj/
+MoviePlaiter.depend
+MoviePlaiter.layout
+
+# OS
+.directory

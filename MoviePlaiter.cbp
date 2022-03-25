@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MoviePlaiter" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/MoviePlaiter" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="View" />
+					<Add directory="../MoviePlaiter" />
+					<Add directory="Model" />
+					<Add directory="Utils" />
+					<Add directory="include" />
+					<Add directory="./" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="`fltk-config --cxxflags`" />
+		</Compiler>
+		<Linker>
+			<Add option="`fltk-config --ldstaticflags`" />
+		</Linker>
+		<Unit filename="fileio/MovieLoader.cpp" />
+		<Unit filename="fileio/MovieLoader.h" />
+		<Unit filename="fileio/MovieSaver.cpp" />
+		<Unit filename="fileio/MovieSaver.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="model/Movie.cpp" />
+		<Unit filename="model/Movie.h" />
+		<Unit filename="model/MovieList.cpp" />
+		<Unit filename="model/MovieList.h" />
+		<Unit filename="model/MovieNode.cpp" />
+		<Unit filename="model/MovieNode.h" />
+		<Unit filename="notes.txt" />
+		<Unit filename="utils/Utils.cpp" />
+		<Unit filename="utils/Utils.h" />
+		<Unit filename="view/AddMovieWindow.cpp" />
+		<Unit filename="view/AddMovieWindow.h" />
+		<Unit filename="view/DeleteMovieWindow.cpp" />
+		<Unit filename="view/DeleteMovieWindow.h" />
+		<Unit filename="view/MovieLibraryWindow.cpp" />
+		<Unit filename="view/MovieLibraryWindow.h" />
+		<Unit filename="view/OKCancelWindow.cpp" />
+		<Unit filename="view/OKCancelWindow.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
